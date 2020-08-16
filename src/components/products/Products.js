@@ -48,7 +48,7 @@ const Products = ({
         sortProducts={sortProducts}
       />
       <div className="o-container">
-        <div className="o-grid">
+        <div className="o-grid o-grid--center">
           {splicedProducts.map((product, index) => {
             const { productId, category, cost, img, name } = product;
             const { points } = user.user;
