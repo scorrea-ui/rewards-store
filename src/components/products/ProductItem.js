@@ -1,15 +1,6 @@
 import React from "react";
-import "antd/dist/antd.css";
 
-const ProductItem = ({
-  _id,
-  category,
-  cost,
-  img,
-  name,
-  redeemPoints,
-  points,
-}) => {
+const ProductItem = ({ category, cost, img, name, redeemPoints, points }) => {
   return (
     <div className="o-grid__col u-3/12@md">
       <div className="c-product__box">

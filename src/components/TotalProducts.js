@@ -1,8 +1,7 @@
 import React from "react";
-import { connect } from "react-redux";
 import { withRouter } from "react-router";
 
-const TotalProducts = ({ products, location }) => {
+const TotalProducts = ({ productsLength, location }) => {
   const getProductPerPage = () => {
     const search = location.search;
     const productNum = new URLSearchParams(search);
@@ -11,15 +10,9 @@ const TotalProducts = ({ products, location }) => {
 
   return (
     <span>
-      {getProductPerPage()} / {products.products.length}
+      {getProductPerPage() ? getProductPerPage() : 16} / {productsLength}
     </span>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    products: state.products,
-  };
-};
-
-export default withRouter(connect(mapStateToProps, null)(TotalProducts));
+export default withRouter(TotalProducts);

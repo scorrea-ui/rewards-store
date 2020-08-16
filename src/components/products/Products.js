@@ -1,14 +1,26 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { getProducts, redeemUserPoints } from "../redux/actions";
+import {
+  getProducts,
+  redeemUserPoints,
+  sortProductsByPrice,
+} from "../redux/actions";
 import ProductsHeader from "../productsHeader";
 import ProductItem from "./ProductItem";
 import usePagination from "../../hooks/pagination";
 import { Modal } from "antd";
 
-const Products = ({ getAllProducts, products, getPoints, user, points }) => {
+const Products = ({
+  getAllProducts,
+  products,
+  getPoints,
+  user,
+  points,
+  sortProducts,
+}) => {
   useEffect(() => {
     getAllProducts();
+
     if (points.message.error) {
       Modal.error({
         content: points.message.error,
@@ -17,8 +29,12 @@ const Products = ({ getAllProducts, products, getPoints, user, points }) => {
       Modal.success({
         content: points.message.message,
       });
+
+      if (points.message !== "") {
+        points.message = "";
+      }
     }
-  }, [getAllProducts, points.message.error, points.message.message]);
+  }, [getAllProducts, points.message]);
 
   const paginatedProducts = usePagination(products.products, 16);
   const splicedProducts = paginatedProducts.currentData();
@@ -28,6 +44,7 @@ const Products = ({ getAllProducts, products, getPoints, user, points }) => {
       <ProductsHeader
         products={paginatedProducts}
         allProducts={products.products}
+        sortProducts={sortProducts}
       />
       <div className="o-container">
         <div className="o-grid">
@@ -67,6 +84,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getAllProducts: () => dispatch(getProducts()),
     getPoints: (id) => dispatch(redeemUserPoints(id)),
+    sortProducts: (items, sort) => dispatch(sortProductsByPrice(items, sort)),
   };
 };
 

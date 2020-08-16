@@ -1,33 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getUser } from "../redux/actions";
+import { Link } from "react-router-dom";
 
-const Header = ({ getUser, user }) => {
-  const [points, setPoints] = useState(0);
-
+const Header = ({ getUser, user, points }) => {
   useEffect(() => {
     getUser();
-    setPoints(user.user.points);
-  }, [getUser, user.user.points]);
+  }, [getUser, points.message]);
+
+  const { loading } = user;
 
   return (
     <header className="c-header">
-      <img
-        src={process.env.PUBLIC_URL + "/aerolab-logo.svg"}
-        alt="Aerolab Logo"
-      ></img>
-      {user.loading ? (
+      <Link style={{ display: "inline-flex" }} to="/">
+        <img
+          src={process.env.PUBLIC_URL + "/aerolab-logo.svg"}
+          alt="Aerolab Logo"
+        ></img>
+      </Link>
+      {loading ? (
         <span className="c-header__info">Loading...</span>
       ) : (
         <div className="c-header__info">
-          <p className="c-header__user">{user.user.name}</p>
-          <div className="c-header__points">
-            <span>{points}</span>
-            <img
-              src={process.env.PUBLIC_URL + "/icons/coin.svg"}
-              alt="Coins"
-            ></img>
-          </div>
+          <p className="c-header__user">
+            <Link to="/redeem?products=16">{user.user.name}</Link>
+          </p>
+          <Link to="/points">
+            <div className="c-header__points">
+              <span>{user.user.points}</span>
+              <img
+                src={process.env.PUBLIC_URL + "/icons/coin.svg"}
+                alt="Coins"
+              ></img>
+            </div>
+          </Link>
         </div>
       )}
     </header>
@@ -37,6 +43,7 @@ const Header = ({ getUser, user }) => {
 const mapStateToProps = (state) => {
   return {
     user: state.users,
+    points: state.points,
   };
 };
 

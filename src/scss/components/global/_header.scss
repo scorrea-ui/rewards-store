@@ -5,6 +5,10 @@
   min-height: 9.4rem;
   padding: 1.6rem 4.2rem;
 
+  a {
+    color: color(grey);
+  }
+
   &__info {
     align-items: center;
     color: color(grey);

@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero title="Electronics" />
 
       <Products />
       <Footer />

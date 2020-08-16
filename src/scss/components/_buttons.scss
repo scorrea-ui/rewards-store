@@ -1,0 +1,25 @@
+.c-btn {
+  appearance: none;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  &--primary {
+    background-color: color(black);
+    color: color(white);
+  }
+
+  &--secondary {
+    background-color: color(white);
+    color: color(black);
+  }
+
+  &--tertiary {
+    background-color: color(grey);
+    color: color(black);
+  }
+}
