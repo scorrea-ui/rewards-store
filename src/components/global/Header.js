@@ -23,9 +23,9 @@ const Header = ({ getUser, user, points }) => {
       ) : (
         <div className="c-header__info">
           <p className="c-header__user">
-            <Link to="/redeem?products=16">{user.user.name}</Link>
+            <Link to="/rewards-store/redeem?products=16">{user.user.name}</Link>
           </p>
-          <Link to="/points">
+          <Link to="/rewards-store/points">
             <div className="c-header__points">
               <span>{user.user.points}</span>
               <img
