@@ -12,7 +12,7 @@ const Header = ({ getUser, user, points }) => {
 
   return (
     <header className="c-header">
-      <Link style={{ display: "inline-flex" }} to="/">
+      <Link style={{ display: "inline-flex" }} to="/rewards-store/">
         <img
           src={process.env.PUBLIC_URL + "/aerolab-logo.svg"}
           alt="Aerolab Logo"
