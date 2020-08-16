@@ -8,9 +8,15 @@ export const Router = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/redeem" component={Redeem}></Route>
-        <Route path="/points" component={Points}></Route>
+        <Route exact path="/rewards-store">
+          <Home />
+        </Route>
+        <Route path="/rewards-store/redeem">
+          <Redeem />
+        </Route>
+        <Route path="/rewards-store/points">
+          <Points />
+        </Route>
       </Switch>
     </div>
   );

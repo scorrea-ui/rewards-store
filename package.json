@@ -1,6 +1,6 @@
 {
-  "homepage": "http://scorrea-ui.github.io/rewards-store",
   "name": "store-correa-santiago",
+  "homepage": "http://scorrea-ui.github.io/rewards-store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

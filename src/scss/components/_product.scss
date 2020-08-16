@@ -50,7 +50,7 @@
       & .c-product__buy {
         &--success {
           &::before {
-            background-image: url("/icons/buy-white.svg");
+            background-image: url("/rewards-store/icons/buy-white.svg");
           }
         }
 
@@ -65,7 +65,7 @@
     &--success {
       &::before {
         content: "";
-        background-image: url("/icons/buy-blue.svg");
+        background-image: url("/rewards-store/icons/buy-blue.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 4.2rem;
