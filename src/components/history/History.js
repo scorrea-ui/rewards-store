@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getHistory } from "../redux/actions";
-import ProductsHeader from "../productsHeader";
+import ProductsHeader from "../products/productsHeader";
 import usePagination from "../../hooks/pagination";
 import HistoryItem from "./HistoryItem";
 

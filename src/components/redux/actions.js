@@ -14,8 +14,7 @@ import {
   ADD_POINTS_FAILED,
   ADD_POINTS_SUCCESS,
   ADD_POINTS_PENDING,
-  ORDER_PRODUCTS_BY_PRICE,
-  ORDER_PRODUCTS_BY_CATEGORY,
+  ORDER_PRODUCTS
 } from "./actionTypes";
 import { fetchProfile, fetchHistory, addPoints } from "../api/users";
 import { fetchProducts, redeemPoints } from "../api/products";
@@ -159,7 +158,7 @@ export const sortProductsByPrice = (product, sort) => {
     }
 
     dispatch({
-      type: ORDER_PRODUCTS_BY_PRICE,
+      type: ORDER_PRODUCTS,
       payload: products,
       sort: sort,
     });

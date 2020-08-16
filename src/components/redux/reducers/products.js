@@ -2,8 +2,7 @@ import {
   GET_PRODUCTS_PENDING,
   GET_PRODUCTS_FAILED,
   GET_PRODUCTS_SUCCESS,
-  ORDER_PRODUCTS_BY_PRICE,
-  ORDER_PRODUCTS_BY_CATEGORY,
+  ORDER_PRODUCTS,
 } from "../actionTypes";
 
 const initialState = {
@@ -38,15 +37,7 @@ export default function (state = initialState, action) {
       };
     }
 
-    case ORDER_PRODUCTS_BY_PRICE: {
-      return {
-        ...state,
-        products: action.payload,
-        sort: action.payload.sort,
-      };
-    }
-
-    case ORDER_PRODUCTS_BY_CATEGORY: {
+    case ORDER_PRODUCTS: {
       return {
         ...state,
         products: action.payload,

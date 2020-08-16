@@ -153,4 +153,29 @@
     text-align: center;
     letter-spacing: -0.00423529rem;
   }
+
+  &__sorter {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+
+    & > span {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      letter-spacing: -0.015rem;
+      margin-right: 2rem;
+
+      &:first-child {
+        color: color(grey);
+      }
+    }
+  }
+
+  &__sortby {
+    color: color(grey-30);
+    border-left: 0.1rem solid color(grey-20);
+    display: inline-block;
+    padding-left: 1.5rem;
+  }
 }

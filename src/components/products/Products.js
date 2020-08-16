@@ -5,9 +5,10 @@ import {
   redeemUserPoints,
   sortProductsByPrice,
 } from "../redux/actions";
-import ProductsHeader from "../productsHeader";
+import ProductsHeader from "./productsHeader";
 import ProductItem from "./ProductItem";
 import usePagination from "../../hooks/pagination";
+import Footer from "../global/Footer";
 import { Modal } from "antd";
 
 const Products = ({
@@ -67,6 +68,7 @@ const Products = ({
             );
           })}
         </div>
+        <Footer allProducts={products.products} />
       </div>
     </div>
   );

@@ -22,4 +22,19 @@
     background-color: color(grey);
     color: color(black);
   }
+
+  &--sorters {
+    background-color: color(grey-10);
+    color: color(grey-30);
+    display: inline-block;
+    border-radius: 2.05rem;
+    letter-spacing: -0.015rem;
+    margin-right: 2.4rem;
+    max-width: 17.2rem;
+
+    &:hover {
+      background-color: color(blue);
+      color: color(white);
+    }
+  }
 }

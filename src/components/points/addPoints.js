@@ -1,5 +1,5 @@
 import React from "react";
-import { addUserPoints } from "./redux/actions";
+import { addUserPoints } from "../redux/actions";
 import { connect } from "react-redux";
 import ButtonPoints from "./ButtonPoints";
 
