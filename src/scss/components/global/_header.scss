@@ -1,0 +1,31 @@
+.c-header {
+  background-color: color(white);
+  display: flex;
+  justify-content: space-between;
+  min-height: 9.4rem;
+  padding: 1.6rem 4.2rem;
+
+  &__info {
+    align-items: center;
+    color: color(grey);
+    display: flex;
+    font-size: 2.4rem;
+  }
+
+  &__user {
+    letter-spacing: -0.015rem;
+    margin-bottom: 0;
+    margin-right: 2.7rem;
+  }
+
+  &__points {
+    background-color: color(grey-10);
+    border-radius: 2.05rem;
+    padding: 1.2rem;
+    text-align: center;
+
+    span {
+      margin-right: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.o-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -2.4rem;
+
+  & > &__col {
+    box-sizing: inherit;
+    flex-basis: auto;
+    min-width: 0;
+    padding-left: 2.4rem;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--equal-height > &__col {
+    display: flex;
+  }
+}

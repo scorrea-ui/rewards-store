@@ -1,0 +1,17 @@
+.c-hero {
+  align-items: flex-end;
+  background-image: url("/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 4rem;
+  min-height: 48rem;
+
+  &__title {
+    color: color(white);
+    font-size: 6.4rem;
+    line-height: 1.25;
+    padding-bottom: 5rem;
+  }
+}
