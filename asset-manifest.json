@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rewards-store/static/css/main.bf2f11d0.chunk.css",
-    "main.js": "/rewards-store/static/js/main.fa8b563b.chunk.js",
-    "main.js.map": "/rewards-store/static/js/main.fa8b563b.chunk.js.map",
+    "main.js": "/rewards-store/static/js/main.63c2c4ca.chunk.js",
+    "main.js.map": "/rewards-store/static/js/main.63c2c4ca.chunk.js.map",
     "runtime-main.js": "/rewards-store/static/js/runtime-main.7586a40e.js",
     "runtime-main.js.map": "/rewards-store/static/js/runtime-main.7586a40e.js.map",
     "static/css/2.04ff9426.chunk.css": "/rewards-store/static/css/2.04ff9426.chunk.css",
     "static/js/2.86240d8e.chunk.js": "/rewards-store/static/js/2.86240d8e.chunk.js",
     "static/js/2.86240d8e.chunk.js.map": "/rewards-store/static/js/2.86240d8e.chunk.js.map",
     "index.html": "/rewards-store/index.html",
-    "precache-manifest.466e685b59dde1034e9ecc3426f88323.js": "/rewards-store/precache-manifest.466e685b59dde1034e9ecc3426f88323.js",
+    "precache-manifest.923d4f5392f1511fce9200b03988a40e.js": "/rewards-store/precache-manifest.923d4f5392f1511fce9200b03988a40e.js",
     "service-worker.js": "/rewards-store/service-worker.js",
     "static/css/2.04ff9426.chunk.css.map": "/rewards-store/static/css/2.04ff9426.chunk.css.map",
     "static/css/main.bf2f11d0.chunk.css.map": "/rewards-store/static/css/main.bf2f11d0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.04ff9426.chunk.css",
     "static/js/2.86240d8e.chunk.js",
     "static/css/main.bf2f11d0.chunk.css",
-    "static/js/main.fa8b563b.chunk.js"
+    "static/js/main.63c2c4ca.chunk.js"
   ]
 }
