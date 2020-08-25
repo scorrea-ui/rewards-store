@@ -12,7 +12,7 @@ const Pagination = ({ products, history }) => {
   }, [history, products]);
 
   return (
-    <div className="c-pagination">
+    <div className="c-pagination enable">
       <button
         className="c-pagination__button c-pagination__button--prev"
         onClick={() => products.prev()}

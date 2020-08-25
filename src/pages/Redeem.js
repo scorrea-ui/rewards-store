@@ -7,7 +7,7 @@ export const Redeem = () => {
   return (
     <div>
       <Header />
-      <Hero title="Redeemed" />
+      <Hero title="Historial de productos" background={process.env.PUBLIC_URL + '/rewards.jpg'} />
       <History />
     </div>
   );

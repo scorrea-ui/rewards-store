@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div>
       <Header />
-      <Hero title="Electronics" />
+      <Hero title="Lista de productos" />
       <Products />
     </div>
   );

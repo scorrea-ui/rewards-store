@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Has Props should render Hero correctly with given title 1`] = `
+<div
+  className="c-hero"
+>
+  <div
+    className="o-container"
+  >
+    <div
+      className="o-grid"
+    >
+      <h1
+        className="c-hero__title"
+      >
+        Hero
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero Component should render Hero correctly with given title 1`] = `
+<div
+  className="c-hero"
+>
+  <div
+    className="o-container"
+  >
+    <div
+      className="o-grid"
+    >
+      <h1
+        className="c-hero__title"
+      >
+        Hero
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero should render with title props should render Hero correctly with given title 1`] = `
+<div
+  className="c-hero"
+>
+  <div
+    className="o-container"
+  >
+    <div
+      className="o-grid"
+    >
+      <h1
+        className="c-hero__title"
+      >
+        Hero
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home Page should render Home Page correctly 1`] = `
+<div>
+  <Connect(Header) />
+  <Hero
+    title="Lista de productos"
+  />
+  <Connect(Products) />
+</div>
+`;
+
+exports[`MyComponent should render Home Page correctly 1`] = `
+<div>
+  <Connect(Header) />
+  <Hero
+    title="Lista de productos"
+  />
+  <Connect(Products) />
+</div>
+`;
+
+exports[`MyComponent should render correctly in "debug" mode 1`] = `
+<div>
+  <Connect(Header) />
+  <Hero
+    title="Lista de productos"
+  />
+  <Connect(Products) />
+</div>
+`;
+
+exports[`Redeem Page should render the Redeem page correctly 1`] = `
+<div>
+  <Connect(Header) />
+  <Hero
+    title="Historial de productos"
+  />
+  <Connect(History) />
+</div>
+`;
+
+exports[`should render Hero correctly with given title 1`] = `
+<div
+  className="c-hero"
+>
+  <div
+    className="o-container"
+  >
+    <div
+      className="o-grid"
+    >
+      <h1
+        className="c-hero__title"
+      >
+        Hero
+      </h1>
+    </div>
+  </div>
+</div>
+`;

@@ -1,17 +1,29 @@
 .c-hero {
   align-items: flex-end;
-  background-image: url("/rewards-store/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   margin-bottom: 4rem;
   min-height: 48rem;
+  position: relative;
+
+  &::after {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
 
   &__title {
     color: color(white);
     font-size: 6.4rem;
     line-height: 1.25;
     padding-bottom: 5rem;
+    z-index: 2;
   }
 }

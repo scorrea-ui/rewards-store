@@ -7,7 +7,7 @@ export const Points = () => {
   return (
     <div>
       <Header />
-      <Hero title="Get Points" />
+      <Hero title="Get Points" background={process.env.PUBLIC_URL + '/money.jpg'} />
       <AddPoints />
     </div>
   );
